@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+
+///////////////////////////             TYPOLOGY
+
+.container-main {
+
+
+  header {
+    padding: 1em;
+    border-bottom: solid 1px grey;
+  
+    h1 {
+      color: blue;
+
+    }     
+  
+    nav {
+      ul {
+        li {
+
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: black;
+            transition: all .3s ease-in-out;
+          }
+
+          a:hover {
+            color: blue;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+  .container {
+    margin: 1em;
+  }
+
+
+
+
+  footer {
+    border-top: solid 1px grey;
+    .footer-1,
+    .footer-2,
+    .footer-3,
+    .footer-4 {
+      padding: 2em;
+      
+    }
+
+    .footer-1 {
+      margin-top: 1em;
+      
+      h3 {
+        color: grey;
+        margin-bottom: .5em;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: .2em;
+        a {
+          color: grey;
+          text-decoration: none;
+          transition: all .5s ease-in-out;
+        }
+
+        a:hover {
+          color: black;
+        }
+      }
+    }
+
+    .footer-2 {
+      
+      * {
+        margin: .2em;
+        padding: 1em;
+      }
+
+      h3 {
+        color: grey;
+        text-align: center;
+      }
+
+
+      form {
+        
+        input {
+          border:none;
+          border-bottom: 1px solid grey;
+        }
+        textarea {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1rem;
+          border:none;
+          border-bottom: 1px solid grey;
+        }
+
+        button {
+          border: none;
+          transition: all .5s ease-in-out;
+        }
+        
+        button:hover {
+          background: darkgrey;
+          color: white;
+        }
+      }
+    }
+
+    .footer-3 {
+      margin-top: 1em;
+      h3 {
+        color: grey;
+      }
+
+      ul {
+
+        li {
+          list-style: none;
+          
+          i {
+            color: grey;
+            transition: all .5s ease-in-out;
+
+          }
+
+          i:hover {
+            color: black;
+          }
+        }
+      }
+    }
+
+    .footer-4 {
+      text-align: center;
+      color: grey;
+    }
+  }
+}
+
+
+///////////////////////////             LAYOUT
+
+.container-main {
+  max-width:900px;
+  margin: auto;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+
+    nav {
+      
+      margin: auto;
+      ul {
+
+        display: flex;
+        
+        
+        li {
+          padding: .2em;  
+          a {
+
+          }
+        }
+      }
+    }
+
+
+
+
+  }
+
+  
+
+  footer {
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+    * {
+      
+      width: 100%;
+      
+      
+    }
+
+    .footer-1 {
+      text-align: center;
+    }
+
+
+
+    .footer-2 {
+
+      form {
+
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: auto;
+
+        
+      }
+      
+    }
+
+    .footer-3 {
+      
+
+      h3 {
+        width: 100%;
+        text-align: center;
+      }
+      ul {
+        margin: auto;
+        display: flex;
+        
+        li {
+          margin-top: 2em;
+          text-align: center;
+        }
+      }
+    }
+
+    .footer-4 {
+      padding: 0;
+      height: 100%;
+    }
+  }
+
+
+}
+
+@media (min-width: 900px) {
+  
+.container-main {
+ footer {
+    
+    flex-direction: row;
+
+  .footer-1,
+  .footer-3 {
+    
+    width: 20%;
+  }
+
+  .footer-2 {
+    width: 60%;
+  }
+  }
+}
+}
+
+
+@media (min-width: 600px) {
+  
+  .container-main {
+
+    header {
+      flex-direction: row;
+    
+      nav {
+
+        margin-right: 1em;
+
+      }
+      
+    }
+
+
+  }
+  }
+
+
+///////////////////////////             MEDIA QUERIES
+
+
+///////////////////////////             ANIMATION
