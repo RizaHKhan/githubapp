@@ -1,7 +1,7 @@
 export class Github {
     constructor () {        
-        this.client_id = '43fb4e1654632e02b7ac'
-        this.client_secret = '9e998d9a39417971eea4efc391fafa1c6595179c'
+        this.client_id =  process.env.CLIENT_ID
+        this.client_secret = process.env.CLIENT_SECRET
         this.repo_count = 5;
         this.repo_sort = 'created: asc'
     }
