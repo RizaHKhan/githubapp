@@ -74,16 +74,14 @@ body {
 }
 
 .repo-content {
-  table {
-    margin: auto;
-    text-align: center;
 
-    th {
-      padding:.5em;
-      margin:.4em;
-      border: solid;
-    }
+  .repo {
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
   }
+
 }
 
   footer {

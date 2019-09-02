@@ -1,7 +1,7 @@
 export class UI {
     constructor () {
         this.profile = document.querySelector('.git-content')
-        this.repo = document.querySelector('.repo-content')
+        this.rep = document.querySelector('.repo-content')
     }
 
     
@@ -32,15 +32,17 @@ export class UI {
         let output = ''
 
         repos.forEach(function(repo) {
-            output += 
-            `
-            
-            
+            output += `
+            <div class="repo">
+            <h3><a href="${repo.html_url}">${repo.name}</a></h3>
+            <p>Stargazers: ${repo.stargazers_count}</p>
+            <p>Watchers Count: ${repo.watchers_count}</p>
+            <p>Forms Count: ${repo.forms_count}</p>
+            </div>
             `
         })
 
-        this.repo.innerHTML = output;
-        
+        this.rep.innerHTML = output        
         
     }
 
